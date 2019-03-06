@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/normalize.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="styles/html5bp.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
+	
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -16,14 +17,14 @@
 
     <header>
       <section class="container">
-        <a href="#"><h1>Feedr</h1></a>
+        <a id="home" href="#"><h1>Feedr</h1></a>
         <nav>
           <ul>
             <li><a href="#">News Source: <span>Source Name</span></a>
               <ul>
-                  <li><a href="#">Source 1</a></li>
-                  <li><a href="#">Source 2</a></li>
-                  <li><a href="#">Source 3</a></li>
+                  <li><a id="source1" href="#">Source 1</a></li>
+                  <li><a id="source2" href="#">Source 2</a></li>
+                  <li><a id="source3" href="#">Source 3</a></li>
               </ul>
             </li>
           </ul>
@@ -35,70 +36,20 @@
         <div class="clearfix"></div>
       </section>
     </header>
-    <div id="popUp" class="loader hidden">
+	<div id="wait" class="loader" ></div>
+    <div id="popUp">
       <a href="#" class="closePopUp">X</a>
       <div class="container">
-        <h1>Article title here</h1>
-        <p>
-          Article description/content here.
+        <h1 id="title"></h1>	
+        <p id="content">
         </p>
-        <a href="#" class="popUpAction" target="_blank">Read more from source</a>
+        <a href="#" id="link" class="popUpAction" target="_blank">Read more from source</a>
       </div>
     </div>
     <section id="main" class="container">
-      <article class="article">
-        <section class="featuredImage">
-          <img src="images/article_placeholder_1.jpg" alt="" />
-        </section>
-        <section class="articleContent">
-            <a href="#"><h3>Test article title</h3></a>
-            <h6>Lifestyle</h6>
-        </section>
-        <section class="impressions">
-          526
-        </section>
-        <div class="clearfix"></div>
-      </article>
-      <article class="article">
-        <section class="featuredImage">
-          <img src="images/article_placeholder_2.jpg" alt="" />
-        </section>
-        <section class="articleContent">
-            <a href="#"><h3>Test article title</h3></a>
-            <h6>Lifestyle</h6>
-        </section>
-        <section class="impressions">
-          526
-        </section>
-        <div class="clearfix"></div>
-      </article>
-      <article class="article">
-        <section class="featuredImage">
-          <img src="images/article_placeholder_2.jpg" alt="" />
-        </section>
-        <section class="articleContent">
-            <a href="#"><h3>Test article title</h3></a>
-            <h6>Lifestyle</h6>
-        </section>
-        <section class="impressions">
-          526
-        </section>
-        <div class="clearfix"></div>
-      </article>
-      <article class="article">
-        <section class="featuredImage">
-          <img src="images/article_placeholder_1.jpg" alt="" />
-        </section>
-        <section class="articleContent">
-            <a href="#"><h3>Test article title</h3></a>
-            <h6>Lifestyle</h6>
-        </section>
-        <section class="impressions">
-          526
-        </section>
-        <div class="clearfix"></div>
-      </article>
-    </section>
+	
+   </section>
+   <button id="btn"> Load More...</button>
 
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
